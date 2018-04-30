@@ -1,0 +1,17 @@
+#include<stdio.h>
+int add_range(int low,int high);
+int main(void){
+	int result[100];
+	result[0]=add_range(1,10);
+	result[1]=add_range(100,1000);
+	printf("result[0]=%d,result[1]=%d",result[0],result[1]);
+	return 0;
+}
+
+int add_range(int low,int high){
+	int i,sum=0;
+	for(i=low;i<high;i++){
+		sum+=i;
+	}
+	return sum;
+}
